@@ -1,0 +1,3 @@
+/* miniprogram/pages/teacher/account/reset.wxss */
+
+@import '../com.wxss'

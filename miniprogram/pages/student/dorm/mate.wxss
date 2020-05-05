@@ -1,0 +1,12 @@
+/* miniprogram/pages/student/dorm/mate.wxss */
+
+@import "../com.wxss";
+
+.result{
+margin-right: 5vw;
+vertical-align: middle;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 220rpx;
+}

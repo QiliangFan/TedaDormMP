@@ -1,0 +1,11 @@
+<!--miniprogram/pages/student/dorm/mate.wxml-->
+<loading hidden="{{complete}}">获取数据中</loading>
+
+<view class="picker-list" wx:for="{{mates}}">
+
+  <view class="picker-item" >
+    <text class="picker-text">{{item.campus}}</text>
+    <text class="result">{{item.name}}</text>
+  </view>
+
+</view>

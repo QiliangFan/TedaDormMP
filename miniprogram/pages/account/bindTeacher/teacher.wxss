@@ -1,0 +1,49 @@
+/* miniprogram/pages/account/bindStudent/student.wxss */
+page{
+  background: rgb(187, 233, 252) ;
+}
+
+.input-list{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-item{
+  width: 70vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5vh auto;
+}
+
+input{
+  width: 50vw;
+  background: rgb(255, 255, 255);
+  height: 80rpx;
+  margin-left: 2vw;
+  border-radius: 20px;
+  box-shadow: 0 0 1px gray;
+  padding-left: 2vw;
+}
+
+.text{
+  color:rgb(0, 0, 0);
+  text-shadow: 0 0 1px #000;
+  font-size: 1em;
+}
+
+button{
+  width: 30vw !important;
+  border-radius: 20px !important;
+  box-shadow: 0 0 1px gray;
+  background: #3498db;
+}
+
+.button-hover{
+  background: #21638f;
+}

@@ -1,0 +1,47 @@
+<loading hidden="{{complete}}">安排中</loading>
+<view class="picker-list">
+
+  <view class="picker-item">
+    <text class="picker-text">宿舍楼</text>
+    <picker range="{{build_options}}" value="{{build}}" bindchange="chooseBuild">
+      <view style="verticle-align:middle;margin:auto">{{build_options[build]}}</view>
+    </picker>
+  </view>
+
+  <view wx:if="{{hasSingleRoom}}">
+    <view class="line"></view>
+    <view class="picker-item">
+      <text class="picker-text">门洞号</text>
+      <picker range="{{door_options}}" value="{{door}}" bindchange="chooseDoor">
+        <view style="verticle-align:middle;margin:auto">{{door_options[door]}}</view>
+      </picker>
+    </view>
+  </view>
+
+  <view class="line"></view>
+  <view class="picker-item">
+    <text class="picker-text">宿舍号</text>
+    <input type="digit" placeholder="请输入宿舍号" value="{{room}}" bindinput="inputRoom"></input>
+  </view>
+
+  <view wx:if="{{hasSingleRoom}}">
+    <view class="line"></view>
+    <view class="picker-item">
+      <text class="picker-text">单间号</text>
+      <picker range="{{singleRoom_options}}" value="{{singleRoom}}" bindchange="chooseSingleRoom">
+        <view style="verticle-align:middle;margin:auto">{{singleRoom_options[singleRoom]}}</view>
+      </picker>
+    </view>
+  </view>
+
+  <view class="line"></view>
+  <view class="picker-item">
+    <text class="picker-text">学号</text>
+    <input type="digit" placeholder="请输入学号" value="{{stuId}}" bindinput="inputStuId"></input>
+  </view>
+</view>
+
+
+<button bindtap="submit" class="my-button">
+<text class="button-text">提交</text>
+</button>

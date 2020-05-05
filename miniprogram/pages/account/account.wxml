@@ -1,0 +1,45 @@
+<!--miniprogram/pages/account/account.wxml-->
+<loading hidden="{{complete}}">加载中</loading>
+<view wx:if="{{isBind==false}}">
+  <view class="button-list">
+    <button class="account-button" hover-class="account-button-hover" bindtap="go_student">
+      <text>我是学生</text>
+    </button>
+
+    <button class="account-button" hover-class="account-button-hover" bindtap="go_teacher">
+      <text>我是管理员</text>
+    </button>
+  </view>
+</view>
+
+<view wx:if="{{isBind==true}}">
+  <view class="userinfo">
+    <view class="userinfo-avatar">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="userinfo-nickname">
+      <open-data type="userNickName"></open-data>
+    </view>
+  </view>
+
+  <view class="nav-list">
+    <mp-cell value="姓名:{{userData.name}} ">
+      <image slot="icon" src="/images/index/account.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </mp-cell>
+
+    <view class="line"></view>
+
+      <mp-cell value="学院:{{userData.campus}} ">
+        <image slot="icon" src="/images/index/account.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </mp-cell>
+
+    <view class="line"></view>
+
+      <mp-cell value="电话:{{userData.tel}} ">
+        <image slot="icon" src="/images/index/account.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </mp-cell>
+  </view>
+
+  <button class="my-button" bindtap="un_bind"><text>解除绑定</text></button>
+
+</view>

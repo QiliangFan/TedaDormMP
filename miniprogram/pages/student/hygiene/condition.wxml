@@ -1,0 +1,21 @@
+<!--miniprogram/pages/student/hygiene/condition.wxml-->
+<loading hidden="{{complete}}">获取数据中</loading>
+
+<view class="picker-list">
+
+  <view class="picker-item">
+    <text class="picker-text">时间</text>
+    <text class="result">{{date}}</text>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="picker-item">
+    <text class="picker-text">结果</text>
+    <text class="result">{{result}}</text>
+  </view>
+</view>
+
+<textarea value="{{comment}}"  placeholder="无备注" disabled="disabled"></textarea>
+
+<view class="tips">仅显示最新的卫生检查记录</view>

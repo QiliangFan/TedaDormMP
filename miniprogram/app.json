@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/account/account",
+    "pages/problem/problem",
+    "pages/account/bindStudent/student",
+    "pages/account/bindTeacher/teacher",
+    "pages/teacher/hygiene/add",
+    "pages/teacher/hygiene/send",
+    "pages/teacher/dorm/manage",
+    "pages/teacher/account/reset",
+    "pages/student/hygiene/condition",
+    "pages/student/hygiene/warning",
+    "pages/student/dorm/mate"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3498db",
+    "navigationBarTitleText": "泰达宿舍管理",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

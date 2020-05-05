@@ -1,0 +1,40 @@
+/* miniprogram/pages/account/account.wxss */
+page{
+  width: 100vw;
+  height: 100vh;
+  background: rgb(187, 233, 252) ;
+}
+
+.button-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.account-button{
+  background: rgb(114, 147, 219);
+  color:#fff;
+  border: 1px #000;
+  width: 40%;
+  height: 150rpx;
+  margin: 10vh auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgb(114, 114, 114);
+}
+
+.account-button-hover{
+    background: rgb(78, 101, 151);
+}
+
+
+.my-button{
+  background: rgb(126, 12, 110);
+  border-radius: 20px !important;
+}

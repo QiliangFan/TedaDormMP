@@ -1,0 +1,62 @@
+picker {
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5vw;
+  width: 220rpx;
+  text-align: right;
+}
+
+text {
+  margin-left: 5vw !important;
+}
+
+.line {
+  height: 0px;
+  width: 90%;
+  margin: auto;
+  border-top: 2rpx solid rgb(194, 194, 194);
+}
+
+input {
+  height: 120rpx;
+  border-radius: 20px;
+  width: 220rpx;
+  margin-right: 5vw;
+  text-align: center;
+}
+
+textarea{
+  box-shadow: 0rpx 5rpx 5rpx rgb(204, 203, 203);
+  border: 1px gray;
+  border-radius: 20px;
+  width: 90%;
+  height: 20vh;
+  padding: 20rpx;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(202, 240, 255)
+}
+
+.my-button{
+  width: 200rpx;
+  height: 120rpx;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  background: #a7ddd2;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-text{
+  display: block;
+  font-size: 1em;
+  margin: 0 !important;
+}

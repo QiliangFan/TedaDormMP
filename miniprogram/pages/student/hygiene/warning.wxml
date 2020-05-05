@@ -1,0 +1,23 @@
+<loading hidden="{{complete}}">获取数据中</loading>
+
+<view class="picker-list">
+
+  <view class="picker-item">
+    <text class="picker-text">发送者</text>
+    <text class="result">{{sponsor}}</text>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="picker-item">
+    <text class="picker-text">程度</text>
+    <text class="result">{{level}}</text>
+  </view>
+</view>
+
+<textarea value="{{comment}}"  placeholder="无备注" disabled="disabled"></textarea>
+
+<view class="button-view">
+ <button class="my-button" bindtap="del_warning">确认已读</button>
+ <view class="tips">仅显示最近的警告信息</view>
+</view>

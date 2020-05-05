@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "mp-cell": "../../weui-miniprogram/cell/cell"
+  },
+  "navigationBarTitleText":"泰达宿舍管理",
+  "enablePullDownRefresh": true
+}

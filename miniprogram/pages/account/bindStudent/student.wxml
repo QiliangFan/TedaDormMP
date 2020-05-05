@@ -1,0 +1,17 @@
+<!--miniprogram/pages/account/bindStudent/student.wxml-->
+<loading hidden="{{complete}}">绑定中</loading>
+<view class="input-list">
+  <view class="input-item">
+    <text class="text">账号</text>
+    <input type="number" bindinput="account"></input>
+  </view>
+
+    <view class="input-item">
+    <text class="text">密码</text>
+    <input type="text" password="true" bindinput="pwd"></input>
+  </view>
+
+  <view class="input-item">
+    <button hover-class="button-hover" bindtap="bind">绑定</button>
+  </view>
+</view>

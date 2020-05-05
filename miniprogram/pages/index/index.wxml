@@ -1,0 +1,69 @@
+<!--miniprogram/pages/index/index.wxml-->
+<loading hidden="{{complete}}">加载中</loading>
+<view class="page">
+
+  <!-- me -->
+  <view class="userinfo">
+    <view class="userinfo-avatar">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="userinfo-nickname">
+      <open-data type="userNickName"></open-data>
+    </view>
+  </view>
+
+  <view class="nav-list">
+    <mp-cell value="账号信息" hover data-url="/pages/account/account" bindtap="go">
+      <image slot="icon" src="/images/index/account.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </mp-cell>
+  </view>
+
+  <!--管理员-->
+  <block wx:if='{{identity=="teacher"}}'>
+    <view class="nav-list">
+      <mp-cell value="添加卫生检查记录" hover data-url="/pages/teacher/hygiene/add" bindtap="go">
+        <image slot="icon" src="/images/index/account.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </mp-cell>
+
+      <view class="line"></view>
+
+      <mp-cell value="发送通知" hover data-url="/pages/teacher/hygiene/send" bindtap="go">
+        <image slot="icon" src="/images/index/account.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </mp-cell>
+    </view>
+
+    <view class="nav-list">
+      <mp-cell value="安排宿舍" hover data-url="/pages/teacher/dorm/manage" bindtap="go">
+        <image slot="icon" src="/images/index/account.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </mp-cell>
+      <view class="line"></view>
+      <mp-cell value="重置密码" hover data-url="/pages/teacher/account/reset" bindtap="go">
+        <image slot="icon" src="/images/index/account.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </mp-cell>
+    </view>
+
+  </block>
+
+  <!--学生-->
+  <block wx:if='{{identity=="student"}}'>
+    <view class="nav-list">
+      <mp-cell value="宿舍卫生情况" hover data-url="/pages/student/hygiene/condition" bindtap="go">
+        <image slot="icon" src="/images/index/account.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </mp-cell>
+
+      <view class="line"></view>
+
+      <mp-cell value="通知" hover data-url="/pages/student/hygiene/warning" bindtap="go">
+        <image slot="icon" src="/images/index/account.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </mp-cell>
+    </view>
+
+    <view class="nav-list">
+      <mp-cell value="宿舍成员" hover data-url="/pages/student/dorm/mate" bindtap="go">
+        <image slot="icon" src="/images/index/account.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </mp-cell>
+    </view>
+
+  </block>
+  <mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange"></mp-tabbar>
+</view>

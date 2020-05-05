@@ -1,0 +1,10 @@
+<loading hidden="{{complete}}">安排中</loading>
+<view class="picker-list">
+  <view class="picker-item">
+    <text class="picker-text">学号</text>
+    <input type="digit" placeholder="请输入学号" value="{{stuId}}" bindinput="inputStuId"></input>
+  </view>
+</view>
+<button bindtap="submit" class="my-button">
+<text class="button-text">提交</text>
+</button>
